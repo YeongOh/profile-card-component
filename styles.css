@@ -1,0 +1,131 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+
+Dark gray: hsl(0, 0%, 59%)
+
+## Typography
+
+### Body Copy
+
+- Font size (name and stats): 18px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700 */
+
+/* font-family: 'Kumbh Sans', sans-serif; */
+
+:root {
+  --color-primary-dark-cyan: hsl(185, 75%, 39%);
+  --color-primary-very-dark-desat-blue: hsl(229, 23%, 23%);
+  --color-primary-dark-gray-blue: hsl(227, 10%, 46%);
+  --color-neutral-dark-gray: hsl(0, 0%, 59%);
+}
+
+html {
+  font-size: 112.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary-dark-cyan);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.7em;
+  overflow: hidden;
+  background-color: white;
+}
+
+.card__top {
+  position: relative;
+}
+
+.card__profile-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 20%);
+}
+
+.card__profile-img {
+  border-radius: 50%;
+  border: 5px white solid;
+}
+
+.card__mid {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.card__name {
+  margin-top: 2.5rem;
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+}
+
+.card__age {
+  color: var(--color-primary-dark-gray-blue);
+  font-weight: 400;
+}
+
+.card__location {
+  font-size: 0.8rem;
+  color: var(--color-primary-dark-gray-blue);
+}
+
+.card__bottom {
+  border-top: 1px hsla(0, 0%, 59%, 0.205) solid;
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem 0.5rem;
+}
+
+.card__stats {
+  text-align: center;
+}
+
+.card__numbers {
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.card__stats__category {
+  font-size: 0.7rem;
+  color: var(--color-primary-dark-gray-blue);
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 1.05rem;
+  }
+}
