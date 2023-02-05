@@ -97,6 +97,7 @@ body {
   margin-bottom: 0.4rem;
   font-weight: 700;
   font-size: 1rem;
+  color: var(--color-primary-very-dark-desat-blue);
 }
 
 .card__age {
@@ -123,6 +124,7 @@ body {
 .card__numbers {
   font-weight: 700;
   margin-bottom: 0.3rem;
+  color: var(--color-primary-very-dark-desat-blue);
 }
 
 .card__stats__category {
